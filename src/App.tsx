@@ -3,10 +3,12 @@ import Header from "./components/Header/Header";
 
 function App() {
   return (
-    <>
-      <Header />
-      <Outlet />
-    </>
+    <div className=" grid h-screen items-center justify-center">
+      <div className="flex h-fit flex-col">
+        <Header />
+        <Outlet />
+      </div>
+    </div>
   );
 }
 
