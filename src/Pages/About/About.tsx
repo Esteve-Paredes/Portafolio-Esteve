@@ -9,16 +9,16 @@ function About() {
         <div className="flex flex-col gap-4">
           <p className="font-poppins">
             Hola, soy Esteve, un apasionado desarrollador de software con un año
-            de experiencia en el area de desarrollo. Me especializo tanto en
+            de experiencia en el área de desarrollo. Me especializo tanto en
             backend como en frontend, lo que me permite tener una visión
             completa y detallada de los proyectos en los que trabajo. Mi
             objetivo es crear soluciones eficientes y de alta calidad que
             cumplan con las necesidades de los usuarios y los negocios.
           </p>
           <p className="font-poppins">
-            Tambien soy un apasionado de la lectura fantastica medieval, la
-            musica y el dibujo, entre mis libros favoritos tengo a Harry Potter
-            y Guardianes Elementales y mi instrumento favorito es la guitarra.
+            También soy un apasionado de la lectura fantástica medieval, la
+            música y el dibujo. Entre mis libros favoritos tengo a Harry Potter
+            y Guardianes Elementales, y mi instrumento favorito es la guitarra.
           </p>
         </div>
         <div>
