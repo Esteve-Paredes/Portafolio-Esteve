@@ -4,7 +4,7 @@ import Header from "./components/Header/Header";
 function App() {
   return (
     <div className=" grid h-screen items-center justify-center">
-      <div className="flex h-fit flex-col">
+      <div className="h-[768px] w-[720px]">
         <Header />
         <Outlet />
       </div>

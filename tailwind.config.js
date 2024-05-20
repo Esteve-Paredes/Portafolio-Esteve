@@ -4,8 +4,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        "custom-dark": "#20231C",
+        "custom-dark": "#1C1F18",
         "custom-beige": "#3D3729",
+      },
+      backgroundImage: {
+        "home-backgroung": "url('/src/assets/teclado-fondo.jpg')",
       },
     },
   },
