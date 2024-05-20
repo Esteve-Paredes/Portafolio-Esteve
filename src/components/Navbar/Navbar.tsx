@@ -16,7 +16,7 @@ function Navbar() {
           <Link
             id="home"
             to={"/"}
-            className={`flex h-full w-full items-center justify-center hover:text-blue-600 active:text-blue-900 ${isVisited ? "text-blue-500" : "text-white"}`}
+            className={`flex h-full w-full items-center justify-center hover:text-neutral-400 active:text-neutral-800 ${isVisited ? "text-custom-vanilla" : "text-white"}`}
             onClick={onClick}
           >
             Home
@@ -26,7 +26,7 @@ function Navbar() {
           <Link
             id="about"
             to={"/about"}
-            className={`flex h-full w-full items-center justify-center hover:text-blue-600 active:text-blue-900 ${isVisited ? "text-blue-500" : "text-white"}`}
+            className={`flex h-full w-full items-center justify-center hover:text-neutral-400 active:text-neutral-800 ${isVisited ? "text-custom-vanilla" : "text-white"}`}
             onClick={onClick}
           >
             About
