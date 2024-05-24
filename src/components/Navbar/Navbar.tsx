@@ -42,6 +42,16 @@ function Navbar() {
             Resume
           </Link>
         </li>
+        <li className="flex h-12 w-28">
+          <Link
+            id="projects"
+            to={"/projects"}
+            className={`flex h-full w-full items-center justify-center hover:text-neutral-400 active:text-neutral-800 ${isVisited ? "text-custom-vanilla" : "text-white"}`}
+            onClick={onClick}
+          >
+            Projects
+          </Link>
+        </li>
       </ul>
     </nav>
   );
