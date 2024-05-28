@@ -5,7 +5,7 @@ function Porjects() {
   return (
     <section className="px-6">
       <div className="my-8 font-poppins text-5xl font-bold">Mis Projectos</div>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 gap-2">
         {proyects.map((proyect: Proyect, key) => {
           return <CardsProyects key={key} proyect={proyect} />;
         })}
