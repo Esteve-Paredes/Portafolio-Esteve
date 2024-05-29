@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Proyect } from "../../constants/proyects";
-import { technologies } from "../../constants/technologies";
 import iconsDown from "../../assets/line-angle-down-icon.svg";
+import CardDetail from "../CardDetail/CardDetail";
 
 interface PropProyect {
   proyect: Proyect;
@@ -32,55 +32,13 @@ function CardsProyects({ proyect }: PropProyect) {
         </div>
         <div className="flex items-center">
           <img
-            className={`${showDescription ? "rotate-0" : "rotate-90"} h-5`}
+            className={`${showDescription ? "rotate-90" : "rotate-0"} h-5`}
             src={iconsDown}
             alt="nav"
           />
         </div>
       </div>
-      <div
-        className={`w-full grid-cols-2 rounded-md bg-white ${showDescription ? "grid" : "hidden"}`}
-      >
-        <div className="grid grid-cols-1 gap-4 p-4">
-          <div>
-            <h2 className="font-poppins text-xl font-bold">Git Hub</h2>
-            <a
-              className="text-lg font-semibold text-blue-800 hover:text-blue-500"
-              href={proyect.gitHub}
-            >
-              {proyect.name}
-            </a>
-          </div>
-          <div>
-            <h2 className="font-poppins text-xl font-bold">Link</h2>
-            <a
-              className="text-lg font-semibold text-blue-800 hover:text-blue-500"
-              href={proyect.link}
-            >
-              {proyect.name}
-            </a>
-          </div>
-        </div>
-        <div className="p-4">
-          <h2 className="font-poppins text-xl font-bold">Tecnologias</h2>
-          <div className="flex gap-4 p-2">
-            {proyect.technologies.map((nameTech) => {
-              return technologies.map((tech, key) => {
-                if (tech.name === nameTech) {
-                  return (
-                    <img
-                      key={key}
-                      src={tech.ruta}
-                      alt={tech.name}
-                      width={tech.withIcons}
-                    />
-                  );
-                }
-              });
-            })}
-          </div>
-        </div>
-      </div>
+      <CardDetail proyect={proyect} showDescription={showDescription} />
     </div>
   );
 }
