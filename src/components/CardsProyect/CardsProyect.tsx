@@ -13,10 +13,7 @@ function CardsProyects({ proyect }: PropProyect) {
 
   const exeptionRef = useRef<HTMLDivElement>(null);
 
-  const refDetailDropDown = useClickOutside(
-    () => setShowDescription(false),
-    exeptionRef,
-  );
+  const refDetailDropDown = useClickOutside(() => setShowDescription(false));
 
   const handleToggleDropdown = () => {
     //console.log(exeptionRef.current?.contains(event.target as Node));
