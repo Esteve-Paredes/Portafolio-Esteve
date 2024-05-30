@@ -2,7 +2,7 @@ import linkedin from "../../assets/linkedin.svg";
 
 function Home() {
   return (
-    <section className="bg-home-backgroung flex h-[752px] flex-col justify-between gap-14 bg-cover bg-center px-10">
+    <section className="flex h-full flex-col justify-between gap-14 bg-home-backgroung bg-cover bg-center px-10">
       <div className="my-10 flex flex-col items-center">
         <h1 className="py-3 text-6xl font-thin">
           Esteve <br></br>

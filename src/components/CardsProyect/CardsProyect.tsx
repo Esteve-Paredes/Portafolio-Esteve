@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Proyect } from "../../constants/proyects";
 import iconsDown from "../../assets/line-angle-down-icon.svg";
 import CardDetail from "../CardDetail/CardDetail";
+import useClickOutside from "../../hooks/useClickOutSide";
 
 interface PropProyect {
   proyect: Proyect;
@@ -10,12 +11,23 @@ interface PropProyect {
 function CardsProyects({ proyect }: PropProyect) {
   const [showDescription, setShowDescription] = useState(false);
 
+  const exeptionRef = useRef<HTMLDivElement>(null);
+
+  const refDetailDropDown = useClickOutside(
+    () => setShowDescription(false),
+    exeptionRef,
+  );
+
+  const handleToggleDropdown = () => {
+    //console.log(exeptionRef.current?.contains(event.target as Node));
+    setShowDescription(!showDescription);
+  };
+
   return (
     <div
       className="relative grid grid-cols-1 gap-2 rounded-md "
-      onClick={() => {
-        setShowDescription(!showDescription);
-      }}
+      onClick={handleToggleDropdown}
+      ref={refDetailDropDown}
     >
       <div className="flex cursor-pointer justify-between gap-4 rounded-md bg-stone-300 px-6">
         <img
@@ -38,7 +50,11 @@ function CardsProyects({ proyect }: PropProyect) {
           />
         </div>
       </div>
-      <CardDetail proyect={proyect} showDescription={showDescription} />
+      <CardDetail
+        proyect={proyect}
+        showDescription={showDescription}
+        exeptionRef={exeptionRef}
+      />
     </div>
   );
 }

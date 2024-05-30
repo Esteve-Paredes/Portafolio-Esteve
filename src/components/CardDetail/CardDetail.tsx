@@ -5,14 +5,16 @@ import LinksToProyect from "../LinksToProyect/LinksToProyect";
 type PropCardDetail = {
   proyect: Proyect;
   showDescription: boolean;
+  exeptionRef: React.LegacyRef<HTMLDivElement> | undefined;
 };
 
-function CardDetail({ proyect, showDescription }: PropCardDetail) {
+function CardDetail({ proyect, showDescription, exeptionRef }: PropCardDetail) {
   return (
     <div
-      className={` grid-cols-2 rounded-md bg-white ${showDescription ? "grid" : "hidden"}`}
+      ref={exeptionRef}
+      className={`grid-cols-2 gap-4 rounded-md bg-white p-4 ${showDescription ? "grid" : "hidden"}`}
     >
-      <div className="grid grid-cols-1 gap-4 p-4">
+      <div className="grid grid-cols-1 gap-4 ">
         <LinksToProyect
           name="Github"
           url={proyect.gitHub}
@@ -24,7 +26,7 @@ function CardDetail({ proyect, showDescription }: PropCardDetail) {
           label={proyect.link}
         />
       </div>
-      <div className="p-4">
+      <div>
         <h2 className="font-poppins text-xl font-bold">Tecnologias</h2>
         <div className="flex gap-4 p-2">
           {proyect.technologies.map((nameTech) => {
