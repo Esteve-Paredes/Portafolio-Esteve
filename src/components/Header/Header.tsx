@@ -2,7 +2,7 @@ import Navbar from "../Navbar/Navbar";
 
 function Header() {
   return (
-    <header className="bg-black">
+    <header className="h-12 bg-black">
       <Navbar />
     </header>
   );

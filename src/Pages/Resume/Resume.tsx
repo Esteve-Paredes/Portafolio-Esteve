@@ -4,7 +4,7 @@ import { softSkills } from "../../constants/soft-skills";
 
 function Resume() {
   return (
-    <section className="grid h-[752px]">
+    <section className="grid grow">
       <div className="px-6">
         <h2 className="my-8 text-5xl font-bold">Skills</h2>
         <div className="mx-8 grid grid-cols-4 gap-3">

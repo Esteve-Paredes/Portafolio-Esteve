@@ -10,9 +10,12 @@ function Navbar() {
   };
 
   return (
-    <nav>
-      <ul className="flex flex-row">
-        <li className="flex h-12 w-28">
+    <nav className="h-full">
+      <div className="hidden">
+        <button className="text-white">HM</button>
+      </div>
+      <ul className="flex h-full w-1/2 flex-row xl:w-2/5">
+        <li className="flex h-full w-2/5">
           <Link
             id="home"
             to={"/"}
@@ -22,7 +25,7 @@ function Navbar() {
             Home
           </Link>
         </li>
-        <li className="flex h-12 w-28">
+        <li className="flex h-full w-2/5">
           <Link
             id="about"
             to={"/about"}
@@ -32,7 +35,7 @@ function Navbar() {
             About
           </Link>
         </li>
-        <li className="flex h-12 w-28">
+        <li className="flex h-full w-2/5">
           <Link
             id="resume"
             to={"/resume"}
@@ -42,7 +45,7 @@ function Navbar() {
             Resume
           </Link>
         </li>
-        <li className="flex h-12 w-28">
+        <li className="flex h-full w-2/5">
           <Link
             id="projects"
             to={"/projects"}

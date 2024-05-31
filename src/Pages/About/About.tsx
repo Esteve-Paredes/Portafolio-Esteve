@@ -1,6 +1,6 @@
 function About() {
   return (
-    <section className="grid h-[752px] grid-cols-2 justify-end">
+    <section className="grid grow grid-cols-2 justify-end">
       <div className="grid gap-10 px-6">
         <div className="flex flex-col justify-end gap-4">
           <h2 className=" text-5xl font-bold">About Me</h2>
