@@ -2,7 +2,7 @@ function About() {
   return (
     <section className="grid grow justify-end gap-4 md:grid-cols-2 md:px-9 xl:gap-8 xl:px-16">
       <div className="flex items-center lg:px-4">
-        <div className="grid gap-10">
+        <div className="flex flex-col gap-10">
           <div className="flex flex-col justify-end gap-4">
             <h2 className=" text-5xl font-bold">About Me</h2>
             <p className="font-poppins text-xl">esteve.paredes.4@gmail.com</p>
