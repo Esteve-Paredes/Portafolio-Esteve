@@ -21,7 +21,7 @@ function CardDetail({ proyect, showDescription, exeptionRef }: PropCardDetail) {
           label={proyect.gitHub}
         />
         <LinksToProyect
-          name="Stio web"
+          name="Sitio web"
           url={proyect.link}
           label={proyect.link}
         />

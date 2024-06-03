@@ -23,7 +23,4 @@ export const softSkills = [
   {
     name: "Manejo de estrés",
   },
-  {
-    name: "Confianza en sí mismo",
-  },
 ];

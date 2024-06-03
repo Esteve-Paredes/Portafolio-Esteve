@@ -1,10 +1,12 @@
+import personalPhoto from "../../assets/photo.png";
+
 function About() {
   return (
-    <section className="mt-4 grid grow justify-end gap-4 px-4 lg:grid-cols-2 xl:gap-8 xl:px-6">
+    <section className="3xl:flex-col mt-12 flex grow flex-col gap-4 px-4 lg:flex-row xl:gap-8 xl:px-6">
       <div className="flex px-4">
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-4 sm:gap-10">
           <div className="flex flex-col justify-end gap-4">
-            <h2 className="text-4xl font-bold sm:text-5xl">About Me</h2>
+            <h2 className="text-4xl font-bold sm:text-4xl">About Me</h2>
             <p className="font-poppins text-lg sm:text-xl">
               esteve.paredes.4@gmail.com
             </p>
@@ -33,7 +35,13 @@ function About() {
           </div>
         </div>
       </div>
-      <div>Foto</div>
+      <div className="flex items-center justify-center">
+        <img
+          className="w-52 max-w-none rounded-full sm:w-60 md:w-72 lg:w-96"
+          src={personalPhoto}
+          alt="personal-photo"
+        />
+      </div>
     </section>
   );
 }

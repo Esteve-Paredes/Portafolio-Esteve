@@ -6,7 +6,7 @@ function Porjects() {
     <section className="mt-12 grow px-4 xl:px-6">
       <div className="flex flex-col gap-6 sm:gap-12">
         <div className="lg:px-4 ">
-          <h2 className="font-poppins text-4xl font-bold sm:text-5xl">
+          <h2 className="font-poppins text-3xl font-bold sm:text-4xl">
             Mis Proyectos
           </h2>
         </div>

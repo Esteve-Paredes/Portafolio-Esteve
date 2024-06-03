@@ -4,10 +4,10 @@ import { softSkills } from "../../constants/soft-skills";
 
 function Resume() {
   return (
-    <section className="mt-4 grow md:px-6">
-      <div className="flex flex-col gap-4 sm:gap-10">
-        <div className="flex flex-col gap-8 lg:px-4">
-          <h2 className="flex justify-center text-4xl font-bold sm:block sm:text-5xl">
+    <section className="mt-12 grow md:px-6">
+      <div className="flex flex-col gap-4 sm:gap-6">
+        <div className="flex flex-col gap-4 lg:px-4">
+          <h2 className="flex justify-center text-3xl font-bold sm:block sm:text-4xl">
             Skills
           </h2>
           <div className="grid grid-cols-3 gap-4 px-4 lg:grid-cols-4">
@@ -26,14 +26,18 @@ function Resume() {
             })}
           </div>
         </div>
-        <div className="flex flex-col gap-6 lg:px-4">
-          <h2 className="flex justify-center text-4xl font-bold sm:block sm:text-5xl">
+        <div className="flex flex-col gap-4 lg:px-4">
+          <h2 className="flex justify-center text-3xl font-bold sm:block sm:text-4xl">
             Soft Skills
           </h2>
           <div>
-            <ul className="check-bullet grid px-6 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+            <ul className="check-bullet grid px-6 sm:grid-cols-1 md:grid-cols-2 ">
               {softSkills.map((skill, key) => {
-                return <li key={key}>{skill.name}</li>;
+                return (
+                  <li className="text-sm sm:text-base" key={key}>
+                    {skill.name}
+                  </li>
+                );
               })}
             </ul>
           </div>

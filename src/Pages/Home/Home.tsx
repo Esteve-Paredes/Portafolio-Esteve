@@ -3,7 +3,7 @@ import github from "../../assets/github-icon.svg";
 
 function Home() {
   return (
-    <section className="bg-home-backgroung-movil grow bg-cover bg-center px-10 sm:bg-home-backgroung">
+    <section className="bg-home-backgroung-movil grow bg-cover bg-center px-10 sm:bg-home-backgroung md:rounded-b-2xl">
       <div className="flex h-full flex-col justify-between gap-14  ">
         <div className="3xl:justify-center flex p-10 md:justify-start">
           <div className="flex flex-col gap-2">
