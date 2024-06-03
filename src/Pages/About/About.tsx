@@ -1,6 +1,6 @@
 function About() {
   return (
-    <section className="grid grow justify-end gap-4 px-4 lg:grid-cols-2 xl:gap-8 xl:px-6 ">
+    <section className="mt-4 grid grow justify-end gap-4 px-4 lg:grid-cols-2 xl:gap-8 xl:px-6">
       <div className="flex px-4">
         <div className="flex flex-col gap-10">
           <div className="flex flex-col justify-end gap-4">

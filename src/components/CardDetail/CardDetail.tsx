@@ -12,7 +12,7 @@ function CardDetail({ proyect, showDescription, exeptionRef }: PropCardDetail) {
   return (
     <div
       ref={exeptionRef}
-      className={`grid-cols-2 gap-4 rounded-md bg-white p-4 ${showDescription ? "grid" : "hidden"}`}
+      className={`bg-custom-bone-toDetail grid-cols-2 gap-4 rounded-md p-4 ${showDescription ? "grid" : "hidden"}`}
     >
       <div className="grid grid-cols-1 gap-4 ">
         <LinksToProyect
@@ -27,7 +27,9 @@ function CardDetail({ proyect, showDescription, exeptionRef }: PropCardDetail) {
         />
       </div>
       <div>
-        <h2 className="font-poppins text-xl font-bold">Tecnologias</h2>
+        <h2 className="font-poppins text-lg font-bold sm:text-xl">
+          Tecnologias
+        </h2>
         <div className="flex gap-4 p-2">
           {proyect.technologies.map((nameTech) => {
             return technologies.map((tech, key) => {

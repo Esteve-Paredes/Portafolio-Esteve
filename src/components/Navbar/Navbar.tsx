@@ -19,7 +19,7 @@ function Navbar() {
           <Link
             id="home"
             to={"/"}
-            className={`flex h-full w-full items-center justify-center hover:text-neutral-400 active:text-neutral-800 ${isVisited ? "text-custom-vanilla" : "text-white"}`}
+            className={`flex h-full w-full items-center justify-center hover:text-neutral-400 ${isVisited ? "text-custom-bone-main" : "text-white"}`}
             onClick={onClick}
           >
             Home
@@ -29,7 +29,7 @@ function Navbar() {
           <Link
             id="about"
             to={"/about"}
-            className={`flex h-full w-full items-center justify-center hover:text-neutral-400 active:text-neutral-800 ${isVisited ? "text-custom-vanilla" : "text-white"}`}
+            className={`flex h-full w-full items-center justify-center hover:text-neutral-400 ${isVisited ? "text-custom-bone-main" : "text-white"}`}
             onClick={onClick}
           >
             About
@@ -39,7 +39,7 @@ function Navbar() {
           <Link
             id="resume"
             to={"/resume"}
-            className={`flex h-full w-full items-center justify-center hover:text-neutral-400 active:text-neutral-800 ${isVisited ? "text-custom-vanilla" : "text-white"}`}
+            className={`flex h-full w-full items-center justify-center hover:text-neutral-400 ${isVisited ? "text-custom-bone-main" : "text-white"}`}
             onClick={onClick}
           >
             Resume
@@ -49,7 +49,7 @@ function Navbar() {
           <Link
             id="projects"
             to={"/projects"}
-            className={`flex h-full w-full items-center justify-center hover:text-neutral-400 active:text-neutral-800 ${isVisited ? "text-custom-vanilla" : "text-white"}`}
+            className={`flex h-full w-full items-center justify-center hover:text-neutral-400 ${isVisited ? "text-custom-bone-main" : "text-white"}`}
             onClick={onClick}
           >
             Projects

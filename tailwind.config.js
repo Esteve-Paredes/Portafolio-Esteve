@@ -7,12 +7,13 @@ export default {
         poppins: ["Poppins", "sans-serif"],
       },
       colors: {
-        "custom-dark": "#1C1F18",
-        "custom-beige": "#3D3729",
-        "custom-vanilla": "#E2E3E5",
+        "custom-bone-main": "#EFEBE3",
+        "custom-bone-toCard": "#E2DBCE",
+        "custom-bone-toDetail": "#E0D6C5",
       },
       backgroundImage: {
-        "home-backgroung": "url('/src/assets/escritorio2.jpg')",
+        "home-backgroung": "url('/src/assets/fondo1.png')",
+        "home-backgroung-movil": "url('/src/assets/fondo2.png')",
       },
     },
   },

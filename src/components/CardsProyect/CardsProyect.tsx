@@ -26,20 +26,22 @@ function CardsProyects({ proyect }: PropProyect) {
       onClick={handleToggleDropdown}
       ref={refDetailDropDown}
     >
-      <div className="flex cursor-pointer justify-between gap-4 rounded-md bg-stone-300 px-6">
+      <div className="bg-custom-bone-toCard flex cursor-pointer justify-between gap-4 rounded-md">
         <img
           src={proyect.icon}
           alt="boardable"
           width={60}
           className=" mx-4 rounded-md"
         />
-        <div className="w-full flex-col items-center px-4">
-          <div className="py-2 font-poppins text-xl font-bold">
+        <div className="my-2 flex w-full flex-col gap-1 px-2">
+          <h3 className="font-poppins text-lg font-bold sm:text-xl">
             {proyect.name}
-          </div>
-          <p className="py-2 font-poppins">{proyect.description}</p>
+          </h3>
+          <p className="font-poppins text-sm sm:text-base">
+            {proyect.description}
+          </p>
         </div>
-        <div className="flex items-center">
+        <div className="mx-5 flex items-center">
           <img
             className={`${showDescription ? "rotate-90" : "rotate-0"} h-5`}
             src={iconsDown}

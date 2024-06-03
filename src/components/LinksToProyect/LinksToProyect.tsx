@@ -7,9 +7,9 @@ type PropsLinksToProyect = {
 function LinksToProyect({ name, url, label }: PropsLinksToProyect) {
   return (
     <div>
-      <h2 className="font-poppins text-lg font-bold">{name}</h2>
+      <h2 className="font-poppins text-base font-bold sm:text-lg">{name}</h2>
       <a
-        className="font-semibold text-blue-800 hover:text-blue-500"
+        className="text-sm font-semibold text-blue-800 hover:text-blue-500 sm:text-base"
         href={url}
         target="_blank"
       >

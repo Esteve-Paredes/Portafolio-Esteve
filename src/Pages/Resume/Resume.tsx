@@ -4,13 +4,13 @@ import { softSkills } from "../../constants/soft-skills";
 
 function Resume() {
   return (
-    <section className="grow md:px-6">
+    <section className="mt-4 grow md:px-6">
       <div className="flex flex-col gap-4 sm:gap-10">
         <div className="flex flex-col gap-8 lg:px-4">
           <h2 className="flex justify-center text-4xl font-bold sm:block sm:text-5xl">
             Skills
           </h2>
-          <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
+          <div className="grid grid-cols-3 gap-4 px-4 lg:grid-cols-4">
             {technologies.map((elem, key) => {
               return (
                 <div
@@ -18,7 +18,9 @@ function Resume() {
                   className="flex flex-col items-center justify-end"
                 >
                   <img src={elem.ruta} alt={elem.name} width={elem.with} />
-                  <p className="font-poppins text-lg">{elem.name}</p>
+                  <p className="font-poppins text-base sm:text-lg">
+                    {elem.name}
+                  </p>
                 </div>
               );
             })}
