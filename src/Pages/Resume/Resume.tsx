@@ -4,7 +4,7 @@ import { softSkills } from "../../constants/soft-skills";
 
 function Resume() {
   return (
-    <section className="grow md:p-6">
+    <section className="grow md:px-6">
       <div className="flex flex-col gap-4 sm:gap-10">
         <div className="flex flex-col gap-8 lg:px-4">
           <h2 className="flex justify-center text-4xl font-bold sm:block sm:text-5xl">
