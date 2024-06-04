@@ -7,7 +7,7 @@ function Resume() {
     <section className="mx-auto my-10 w-full max-w-[1400px] grow overflow-auto md:px-6 xl:px-10">
       <div className="flex flex-col gap-4 sm:gap-6 xl:gap-24 2xl:gap-32">
         <div className="flex flex-col gap-4 lg:px-4 2xl:gap-16">
-          <h2 className="flex justify-center text-3xl font-bold sm:block sm:text-4xl 2xl:text-5xl">
+          <h2 className="flex text-3xl font-bold sm:text-4xl 2xl:text-5xl">
             Skills
           </h2>
           <div className="grid grid-cols-3 gap-4 px-4 lg:grid-cols-4 2xl:gap-8">
@@ -27,7 +27,7 @@ function Resume() {
           </div>
         </div>
         <div className="flex flex-col gap-4 lg:px-4 2xl:gap-16">
-          <h2 className="flex justify-center text-3xl font-bold sm:block sm:text-4xl 2xl:text-5xl">
+          <h2 className="flex text-3xl font-bold sm:text-4xl 2xl:text-5xl">
             Soft Skills
           </h2>
           <div>
