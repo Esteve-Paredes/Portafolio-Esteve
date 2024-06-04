@@ -4,8 +4,8 @@ import { softSkills } from "../../constants/soft-skills";
 
 function Resume() {
   return (
-    <section className="mx-auto my-10 w-full max-w-[1400px] grow overflow-auto md:px-6 xl:px-10">
-      <div className="flex flex-col gap-4 sm:gap-6 xl:gap-24 2xl:gap-32">
+    <section className="mx-auto my-10 w-full max-w-[1400px] grow overflow-auto px-4 md:px-6 xl:px-10">
+      <div className="flex flex-col gap-8 px-4 sm:gap-6 xl:gap-24 2xl:gap-32">
         <div className="flex flex-col gap-4 lg:px-4 2xl:gap-16">
           <h2 className="flex text-3xl font-bold sm:text-4xl 2xl:text-5xl">
             Skills
