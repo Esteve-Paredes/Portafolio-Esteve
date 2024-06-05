@@ -6,12 +6,12 @@ function Home() {
     <section className="flex grow justify-center bg-home-backgroung-movil bg-cover bg-center sm:bg-home-backgroung md:rounded-b-2xl">
       <div className="flex h-full w-full max-w-[1024px] flex-col justify-between gap-14 px-6 pt-14 sm:px-8  ">
         <div className="flex justify-center 2xl:justify-start">
-          <div className=" flex flex-col gap-2">
+          <div className=" flex flex-col gap-4">
             <h1 className=" text-7xl font-thin lg:text-8xl">
               Esteve <br></br>
               <span className="text-7xl font-bold lg:text-8xl">Paredes</span>
             </h1>
-            <p className="text-4xl tracking-wide lg:text-5xl">
+            <p className="text-2xl tracking-wide lg:text-3xl">
               Desarrollador Web
             </p>
           </div>

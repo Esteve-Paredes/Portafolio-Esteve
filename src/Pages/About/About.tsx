@@ -2,7 +2,7 @@ import personalPhoto from "../../assets/photo.png";
 
 function About() {
   return (
-    <section className="mx-auto mt-14 flex max-w-[1024px] grow flex-col gap-10 px-6 sm:px-8 xl:gap-16">
+    <section className="mx-auto flex max-w-[1024px] grow flex-col gap-10 px-6 pt-14 sm:px-8 xl:gap-16">
       <div className="flex">
         <div className="flex flex-col gap-4 sm:gap-8">
           <div className="flex flex-col justify-end gap-4">

@@ -7,9 +7,8 @@ export default {
         poppins: ["Poppins", "sans-serif"],
       },
       colors: {
-        "custom-bone-main": "#EFEBE3",
-        "custom-bone-toCard": "#E2DBCE",
-        "custom-bone-toDetail": "#E0D6C5",
+        "custom-bone-toCard": "#F7F3ED",
+        "custom-bone-toDetail": "#F2EDE6",
       },
       backgroundImage: {
         "home-backgroung": "url('/src/assets/fondo1.png')",

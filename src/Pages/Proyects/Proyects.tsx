@@ -3,7 +3,7 @@ import CardsProyects from "../../components/CardsProyect/CardsProyect";
 
 function Porjects() {
   return (
-    <section className="mx-auto mt-14 w-full max-w-[1024px] grow px-6 sm:px-8">
+    <section className="mx-auto w-full max-w-[1024px] grow px-6 pt-14 sm:px-8">
       <div className="flex flex-col gap-6 sm:gap-12">
         <div className="">
           <h2 className="font-poppins text-3xl font-bold sm:text-4xl 2xl:text-5xl">
