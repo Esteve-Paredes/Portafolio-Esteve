@@ -3,10 +3,10 @@ import github from "../../assets/github-icon.svg";
 
 function Home() {
   return (
-    <section className="grow bg-home-backgroung-movil bg-cover bg-center px-10 sm:bg-home-backgroung md:rounded-b-2xl">
-      <div className="flex h-full flex-col justify-between gap-14  ">
-        <div className="flex justify-center p-10 2xl:justify-start">
-          <div className=" flex flex-col gap-2 2xl:pl-96">
+    <section className="flex grow justify-center bg-home-backgroung-movil bg-cover bg-center sm:bg-home-backgroung md:rounded-b-2xl">
+      <div className="flex h-full w-full max-w-[1024px] flex-col justify-between gap-14 px-6 pt-14 sm:px-8  ">
+        <div className="flex justify-center 2xl:justify-start">
+          <div className=" flex flex-col gap-2">
             <h1 className=" text-7xl font-thin lg:text-8xl">
               Esteve <br></br>
               <span className="text-7xl font-bold lg:text-8xl">Paredes</span>
