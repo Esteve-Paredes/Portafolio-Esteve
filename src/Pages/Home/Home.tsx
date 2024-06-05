@@ -3,15 +3,17 @@ import github from "../../assets/github-icon.svg";
 
 function Home() {
   return (
-    <section className="bg-home-backgroung-movil grow bg-cover bg-center px-10 sm:bg-home-backgroung md:rounded-b-2xl">
+    <section className="grow bg-home-backgroung-movil bg-cover bg-center px-10 sm:bg-home-backgroung md:rounded-b-2xl">
       <div className="flex h-full flex-col justify-between gap-14  ">
-        <div className="3xl:justify-center flex p-10 md:justify-start">
-          <div className="flex flex-col gap-2">
-            <h1 className="text-6xl font-thin">
+        <div className="flex justify-center p-10 2xl:justify-start">
+          <div className=" flex flex-col gap-2 2xl:pl-96">
+            <h1 className=" text-7xl font-thin lg:text-8xl">
               Esteve <br></br>
-              <span className="text-7xl font-bold">Paredes</span>
+              <span className="text-7xl font-bold lg:text-8xl">Paredes</span>
             </h1>
-            <p className="text-3xl tracking-wide">Desarrollador Web</p>
+            <p className="text-4xl tracking-wide lg:text-5xl">
+              Desarrollador Web
+            </p>
           </div>
         </div>
         <div className="py-10">
@@ -21,14 +23,14 @@ function Home() {
               href="https://www.linkedin.com/in/esteve-paredes"
               target="_blank"
             >
-              <img src={linkedin} alt="linkedin" width="40" />
+              <img src={linkedin} alt="linkedin" width="48" />
             </a>
             <a
               className="hover:scale-105"
               href="https://github.com/Esteve-Paredes"
               target="_blank"
             >
-              <img src={github} alt="github" width="40" />
+              <img src={github} alt="github" width="48" />
             </a>
           </div>
         </div>

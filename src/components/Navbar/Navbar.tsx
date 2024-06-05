@@ -10,46 +10,46 @@ function Navbar() {
   };
 
   return (
-    <nav className="h-full">
+    <nav className="h-full w-full max-w-[1024px]">
       <div className="hidden">
         <button className="text-white">HM</button>
       </div>
-      <ul className="flex h-full w-1/2 flex-row xl:w-2/5">
-        <li className="flex h-full w-2/5">
+      <ul className="flex h-full flex-row ">
+        <li className="flex h-full">
           <Link
             id="home"
             to={"/"}
-            className={`flex h-full w-full items-center justify-center hover:text-neutral-400 ${isVisited ? "text-custom-bone-main" : "text-white"}`}
+            className={`flex h-full w-full items-center justify-center hover:text-neutral-400 sm:px-8 ${isVisited ? "text-custom-bone-main" : "text-white"}`}
             onClick={onClick}
           >
             Home
           </Link>
         </li>
-        <li className="flex h-full w-2/5">
+        <li className="flex h-full">
           <Link
             id="about"
             to={"/about"}
-            className={`flex h-full w-full items-center justify-center hover:text-neutral-400 ${isVisited ? "text-custom-bone-main" : "text-white"}`}
+            className={`flex h-full w-full items-center justify-center hover:text-neutral-400 sm:px-8 ${isVisited ? "text-custom-bone-main" : "text-white"}`}
             onClick={onClick}
           >
             About
           </Link>
         </li>
-        <li className="flex h-full w-2/5">
+        <li className="flex h-full">
           <Link
             id="resume"
             to={"/resume"}
-            className={`flex h-full w-full items-center justify-center hover:text-neutral-400 ${isVisited ? "text-custom-bone-main" : "text-white"}`}
+            className={`flex h-full w-full items-center justify-center hover:text-neutral-400 sm:px-8 ${isVisited ? "text-custom-bone-main" : "text-white"}`}
             onClick={onClick}
           >
             Resume
           </Link>
         </li>
-        <li className="flex h-full w-2/5">
+        <li className="flex h-full">
           <Link
             id="projects"
             to={"/projects"}
-            className={`flex h-full w-full items-center justify-center hover:text-neutral-400 ${isVisited ? "text-custom-bone-main" : "text-white"}`}
+            className={`flex h-full w-full items-center justify-center hover:text-neutral-400 sm:px-8 ${isVisited ? "text-custom-bone-main" : "text-white"}`}
             onClick={onClick}
           >
             Projects

@@ -2,7 +2,7 @@ import Navbar from "../Navbar/Navbar";
 
 function Header() {
   return (
-    <header className="min-h-12 bg-black  lg:rounded-t-2xl ">
+    <header className="flex min-h-12 justify-center  bg-black sm:min-h-16">
       <Navbar />
     </header>
   );
