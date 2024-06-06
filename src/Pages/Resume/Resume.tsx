@@ -10,7 +10,7 @@ function Resume() {
           <h2 className="flex text-3xl font-bold sm:text-4xl 2xl:text-5xl">
             Skills
           </h2>
-          <div className="flex flex-wrap justify-center gap-5 sm:justify-normal sm:gap-4 lg:gap-7">
+          <div className="flex flex-wrap justify-center gap-2 sm:justify-normal">
             {technologies.map((elem, key) => {
               return (
                 <div
